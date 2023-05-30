@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>courseContent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div  class="search-icon" class="flex items-center  h-screen fi1  ">
+        <div class="absolute">
+            <input type="text" placeholder="Search" class="absolute top-5 left-10 w-45 pl-10 ml-20 pr-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-800 focus:border-gray-800 fi1" >
+            <div class="absolute top-5 left-10 mt-2 ml-3 text-gray-800 search-icon">
+                <i class="fas fa-search ml-20"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+   
+    <div class="flex">
+      <div class="bg-white w-16 h-screen flex flex-col items-center justify-between">
+          <!-- Logo -->
+          <div class="my-4"><img src="assets/icon.png" alt="CRMEFCLOUD" class="w-53 h-38 "></div>
+           <!-- Ligne de séparation -->
+          <div class="border border-gray-300 w-16 absolute top-40  " ></div>
+
+           <!-- Icônes du menu -->
+          <i class=" 	far fa-calendar-alt  absolute top-48 "></i>
+          <i class='fas fa-signature  absolute top-72'></i>
+          <i class="fas fa-cog text-gray-800 absolute top-80"></i>
+          <i class="fas fa-chart-pie text-gray-800 absolute top-t"></i>
+    </div>
+    
+    <div><i class="fas fa-bell ic2"></i></div>
+    <div class="person" ><img src="assets/pr.jpg" alt="CRMEFCLOUD" class="e11"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+
+    <div  x-data="{ circumference: 50 * 2 * Math.PI, percent: 66 }">
+          <div class="prog">
+            <svg  x-cloak aria-hidden="true">
+              <circle class="text-gray-300"  stroke-width="10" stroke="currentColor" fill="transparent" r="50" cx="60" cy="60" />
+              <circle class="text-teal-500 prog1" stroke-width="10" :stroke-dasharray="circumference" :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round" stroke="currentColor" fill="transparent" r="50" cx="60"cy="60"
+               />
+            </svg>
+            <span class="absolute top-11 left-9 text-2xl text-gray-800" x-text="`${percent}%`"></span>
+          </div>
+          <p class="course-pro">Course progress</p>
+
+    </div>
+    
+    
+    <p class="LLC">Learn Linux commandes and practice as you progress</p>
+
+
+    <p class="LLC1">This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3</p>
+    
+    <img src="assets/linux.png" alt="linux" class="ana">
+    
+
+</body>
+</html>
